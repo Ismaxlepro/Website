@@ -1,0 +1,37 @@
+/* Introduire des polices */
+@font-face {
+    font-family: "Ismax";
+    src: url(polices/sunny-spells-basic-font/SunnySpellsBasicRegular-Yz1Wv.ttf);
+}
+body{
+    margin: 0px;
+    font-family: "Ismax";
+}
+header section{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    background-color: #EF30F2;
+    height: 200px;
+}
+header section article{
+    background-color: #0D0D0D;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+}
+header section article a{
+    color: #EF30F2;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+header img{
+    position: absolute;
+    left: 110px;
+    top: 0px;
+    border-radius: 50%;
+    border: solid 20px #EF30F2;
+}
