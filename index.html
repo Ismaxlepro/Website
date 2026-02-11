@@ -5,24 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" defer >
+        fetch("https://www.googleapis.com/youtube/v3/videos?part=statistics&id=VIDEO_ID&key=AIzaSyB0ZvjtVe-f3o7NSXcH2xLXZnM8tH5Mn50")
+        .then(r => r.json())
+        .then(console.log)
+    </script>
 </head>
 <body>
     <header>
         <img src="https://yt3.googleusercontent.com/ytc/AIdro_mLEChNwe_lx5IJHHpTTyeQDZF6dqNzqdv0qIYwxwOIZFEIqKZ4yJI21xrQfhWDIZaP-Q=s160-c-k-c0x00ffffff-no-rj" alt="">
         <section>
-            <article></article>
-            <article></article>
-            <article></article>
-            <article>
+            <article id="headsec1"></article>
+            <article id="headsec2"></article>
+            <article id="headsec3"></article>
+            <article id="headsec4">
                 <a href="">link</a><a href="">link</a><a href="">link</a><a href="">link</a><a href="">link</a><a href="">link</a>
             </article>
         </section>
     </header>
     <main>
-
+        <section>
+            <h2>
+                Mes vidéos les plus récentes:
+            </h2>
+        </section>
     </main>
     <footer>
-        
+
     </footer>
 </body>
 </html>
