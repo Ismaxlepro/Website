@@ -43,7 +43,7 @@ header section article a:hover{
     border-top: solid 10px #EF30F2;
     border-right: solid 10px #EF30F2;
     color: #EF30F2;
-}
+    float:left;}
 #headsec3 * {
     visibility: hidden;
 }
@@ -72,6 +72,15 @@ header img{
     top: 0px;
     border-radius: 50%;
     border: solid 20px #EF30F2;
+    transition: ease-in-out 1s;
+    cursor: pointer;
+}
+header img.active{
+    transform: rotate(360deg);
+}
+header.active{
+    position: sticky;
+    top: 0;
 }
 /* Main */
 
@@ -108,6 +117,7 @@ footer{
     }
     #headsec3 *{
         visibility: visible;
+        cursor: pointer;
     }
     #headsec4{
         border-width: 5px;
